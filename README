@@ -1,5 +1,20 @@
 This is the gem5 simulator.
 
+This is the public repository for SWAP. The instruction for running SWAP codebase is present in the file: `swap_wiki.txt`
+If you use this infrastructure please consider citing the original SWAP paper:
+
+Here's the bibtex:
+
+```
+@inproceedings{parasar2019swap,
+  title={SWAP: Synchronized Weaving of Adjacent Packets for Network Deadlock Resolution},
+  author={Parasar, Mayank and Jerger, Natalie Enright and Gratz, Paul V and Miguel, Joshua San and Krishna, Tushar},
+  booktitle={Proceedings of the 52nd Annual IEEE/ACM International Symposium on Microarchitecture},
+  pages={873--885},
+  year={2019}
+}
+```
+
 The main website can be found at http://www.gem5.org
 
 A good starting point is http://www.gem5.org/Introduction, and for
