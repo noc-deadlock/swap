@@ -1,0 +1,46 @@
+#!/bin/sh
+
+pwd
+#cd ~
+#/sbin/m5 resetstats 
+#./hello.sh
+#/sbin/m5 roibegin
+echo "TESTING"
+cd parsec_img
+#ls -aln bin/
+#ls -aln inputs/canneal/test/
+#./bin/blackscholes 4 inputs/blackscholes/small/in_4.txt prices.txt
+#ls ../pthread_wrapper
+#file /pthread_wrapper/libmypthread-gem5.so ./bin/canneal
+#LD_PRELOAD=../pthread_wrapper/libmypthread-gem5.so ./bin/canneal 1 5 100 inputs/canneal/test/10.nets
+#./bin/canneal 16 10000 2000 inputs/canneal/small/100000.nets
+#./bin/dedup -c -p -v -t 16 -i inputs/dedup/small/media.dat -o output.dat.ddp
+#./bin/streamcluster 10 20 32 4096 4096 1000 none output.txt 16
+#./bin/bodytrack inputs/bodytrack/small/sequenceB_1 4 1 1000 5 0 16
+#cp -r inputs/facesim/small/Face_Data ./
+#./bin/facesim -timing -threads 16
+#./bin/ferret inputs/ferret/test/corel lsh inputs/ferret/test/queries 5 5 2 output.txt
+./bin/fluidanimate 16 5 inputs/fluidanimate/small/in_35K.fluid out.fluid
+#./bin/swaptions -ns 16 -sm 10000 -nt 4
+#export IM_CONCURRENCY=4
+#cp inputs/vips/test/barbados_256x288.v ./
+#./bin/vips im_benchmark barbados_256x288.v output.v
+#./bin/x264 --quiet --qp 20 --partitions b8x8,i4x4 --ref 5 --direct auto --b-pyramid --weightb --mixed-refs --no-fast-pskip --me umh --subme 7 --analyse b8x8,i4x4 --threads 4 -o eledream.264 inputs/x264/test/eledream_32x18_1.y4m
+#cat prices.txt
+#/sbin/m5 roiend
+#ls -al
+#uname
+#./bin/fft -m18 -p16
+#./bin/radix -p4 -r4096 -n262144 -m524288
+#./bin/barnes 16 < inputs/barnes/small/input.template 
+#./bin/fmm 8 < inputs/fmm/test/input.2
+#./bin/lu_cb -p4 -n512 -b16
+#./bin/lu_ncb -p4 -n512 -b16
+#./bin/ocean_cp -n258 -p2 -e1e-07 -r20000 -t28800
+#./bin/ocean_ncp -n258 -p2 -e1e-07 -r20000 -t28800
+#./bin/cholesky -p4 < inputs/cholesky/test/tk14.O
+#./bin/raytrace -s -p4 -a4 inputs/raytrace/test/teapot.env
+#./bin/volrend 4 inputs/volrend/test/head-scaleddown4 4
+#../../../bin/water_spatial 2 < input.template
+#../../../bin/water_nsquared 2 < input.template
+/sbin/m5 exit

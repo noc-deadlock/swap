@@ -1,0 +1,12 @@
+
+Sample gem5 Command to run SWAP:
+================
+./build/Garnet_standalone/gem5.opt configs/example/garnet_synth_traffic.py --network=garnet2.0 --num-cpus=64 --num-dirs=64 --topology=Mesh_XY --mesh-rows=8 --interswap=1 --whenToSwap=1 --whichToSwap=1 --sim-cycles=100000 --injectionrate=0.50 --vcs-per-vnet=1 --no-is-swap=1 --inj-vnet=-1 --synthetic=uniform_random --routing-algorithm=3
+---
+Important options:
+--interswap = 1  # this is to enable SWAP
+--inj-vnet = {0, 1, 2, -1} # -1 randomly inject packets in all the VNets
+--whenToSwap = 1 # this knob control the frequency of initiating SWAP by the routers in the network
+--whichToSwap = 1 # this knob decides if local port is allowed or not to take part in packet-swap
+--no-is-swap = 1 # this knob decides if 'is_swap' bit is used in taking decision for doing swap or not
+--routing-algorithm = 3 # this is adaptive random routing. 2 is for random routing
