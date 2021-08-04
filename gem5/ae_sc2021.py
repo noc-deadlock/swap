@@ -5,12 +5,12 @@ import subprocess
 binary = 'build/Garnet_standalone/gem5.opt'
 os.system("scons -j15 {}".format(binary))
 
-# bench_caps=[ "BIT_ROTATION", "SHUFFLE", "TRANSPOSE" ]
-# bench=[ "bit_rotation", "shuffle", "transpose" ]
+bench_caps=[ "BIT_ROTATION", "SHUFFLE", "TRANSPOSE" ]
+bench=[ "bit_rotation", "shuffle", "transpose" ]
 
 
-bench_caps=[ "BIT_ROTATION" ]
-bench=[ "bit_rotation" ]
+# bench_caps=[ "BIT_ROTATION" ]
+# bench=[ "bit_rotation" ]
 
 routing_algorithm=["TABLE", "XY", "RAND", "ADAPT_RAND", "WestFirst"]
 
