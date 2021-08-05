@@ -20,7 +20,9 @@ Under gem5/
 
 * See gem5/run_script_synthetic.sh
 * To run: ./run_script_synthetic.sh
-
+* A handy (approx.) script for saturation throughtput gem5/sat_thrpt.py
+* To run: python sat_thrpt.py
+ 
 ### Developer ###
 
 * Mayank Parasar (mayankparasar@gmail.com)
