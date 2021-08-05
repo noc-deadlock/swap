@@ -47,7 +47,7 @@ for c in range(len(num_cores)):
 			############ gem5 output-directory ##############
 			output_dir=("{0:s}/{1:d}/{3:s}/{2:s}/vc-{4:d}/inj-{5:1.2f}".format(out_dir, num_cores[c],  bench_caps[b], routing_algorithm[rout_], vc_, injection_rate))
 
-			packet_latency = subprocess.check_output("grep -nri average_flit_latency  {0:s}  | sed 's/.*system.ruby.network.average_flit_latency\s*//'".format(output_dir), shell=True)
+			packet_latency = subprocess.check_output("grep -nri average_packet_latency  {0:s}  | sed 's/.*system.ruby.network.average_packet_latency\s*//'".format(output_dir), shell=True)
 			# print packet_latency
 			pkt_lat = float(packet_latency)
 
@@ -67,7 +67,7 @@ for c in range(len(num_cores)):
 
 			if(os.path.exists(output_dir)):
 
-				packet_latency = subprocess.check_output("grep -nri average_flit_latency  {0:s}  | sed 's/.*system.ruby.network.average_flit_latency\s*//'".format(output_dir), shell=True)
+				packet_latency = subprocess.check_output("grep -nri average_packet_latency  {0:s}  | sed 's/.*system.ruby.network.average_packet_latency\s*//'".format(output_dir), shell=True)
 
 				pkt_lat = float(packet_latency)
 
