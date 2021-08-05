@@ -153,8 +153,8 @@ NetworkInterface::incrementStats(flit *t_flit)
     Cycles queueing_delay = src_queueing_delay + dest_queueing_delay;
     Cycles total_delay = queueing_delay + network_delay;
 
-    m_net_ptr->increment_flit_network_latency(network_delay, vnet);
-    m_net_ptr->increment_flit_queueing_latency(queueing_delay, vnet);
+    // m_net_ptr->increment_flit_network_latency(network_delay, vnet);
+    // m_net_ptr->increment_flit_queueing_latency(queueing_delay, vnet);
     m_net_ptr->increment_flit_network_latency(network_delay, vnet);
     m_net_ptr->increment_flit_queueing_latency(queueing_delay, vnet);
     m_net_ptr->update_flit_latency_histogram(total_delay, vnet);
