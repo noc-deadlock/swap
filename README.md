@@ -12,6 +12,9 @@ In Proc of 52nd Annual IEEE/ACM International Symposium on Microarchitecture, MI
 Paper:
    * https://mayank-parasar.github.io/website/papers/swap_micro2019.pdf
 
+### How to build ###
+Under gem5/
+* scons -j15 scons/Garnet_standalone/gem5.opt
 
 ### How to run ###
 
